@@ -124,18 +124,34 @@ public class Customer {
         return "Customer{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + '}';
     }
 
+    /**
+     *
+     * @return
+     */
     public Integer getStoreId() {
         return storeId;
     }
 
+    /**
+     *
+     * @param storeId
+     */
     public void setStoreId(Integer storeId) {
         this.storeId = storeId;
     }
 
+    /**
+     *
+     * @return
+     */
     public Integer getAddressId() {
         return addressId;
     }
 
+    /**
+     *
+     * @param addressId
+     */
     public void setAddressId(Integer addressId) {
         this.addressId = addressId;
     }

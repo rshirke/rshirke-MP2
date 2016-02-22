@@ -30,6 +30,10 @@ private static final Logger LOG = Logger.getLogger(ProductService.class.getName(
     @Resource(lookup = "jdbc/rshirkeMp2DS")
     private DataSource ds;
     
+    /**
+     *
+     * @return
+     */
     public List<Product> findAll() {
         
         List<Product> products = new ArrayList();

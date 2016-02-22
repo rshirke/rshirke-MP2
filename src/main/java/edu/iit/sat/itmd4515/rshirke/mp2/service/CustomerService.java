@@ -36,6 +36,10 @@ public class CustomerService {
     @Resource(lookup = "jdbc/rshirkeMp2DS")
     private DataSource ds;
     
+    /**
+     *
+     * @return
+     */
     public List<Customer> findAll() {
         
         List<Customer> Customers = new ArrayList();
@@ -66,8 +70,11 @@ public class CustomerService {
         return Customers;
     }
     
-    
-    
+    /**
+     *
+     * @param id
+     * @return
+     */
     public Customer findById(Long id) {
         try (Connection c = ds.getConnection()) {
 
@@ -91,7 +98,11 @@ public class CustomerService {
         return null;
     }
     
-    
+    /**
+     *
+     * @param id
+     * @return
+     */
     public int deleteById(Long id) {
         int rs=0;
         
@@ -123,8 +134,12 @@ public class CustomerService {
         return rs;
     }
     
-    
-     public boolean save(Customer c) {
+    /**
+     *
+     * @param c
+     * @return
+     */
+    public boolean save(Customer c) {
          
          
         boolean statuscustomer=true;
@@ -174,11 +189,12 @@ public class CustomerService {
         return statuscustomer;
     }
      
-     
-     
-     
-     
-      public boolean update(Customer c) {
+    /**
+     *
+     * @param c
+     * @return
+     */
+    public boolean update(Customer c) {
          
          
         boolean statuscustomer=true;
